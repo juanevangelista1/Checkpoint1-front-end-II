@@ -11,34 +11,49 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>SuperHero Forms</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <header>
-      <img src="./assets/hammerImg.png" alt="Imagem do Martelo de Thor" />
-      <h2>Formulário sobre o seu Super Herói</h2>
-    </header>
-    <nav class="sidebar">
-      <form action="#" method="get">
-        <input
-          type="text"
-          name="nome-imagem"
-          id="nome-imagem"
-          placeholder="Nome do super-herói "
-        />
-        <input
-          type="text"
-          name="descrição"
-          id="descricao"
-          placeholder="Descrição do Herói/heroína"
-        />
-        <input type="url" name="url" id="url" placeholder="URL da imagem" />
+    <div class="gridContainer">
+      <header class="gridItem header">
+        <h1 class="title">Personalize seu super-herói</h1>
+        <h2>Checkpoint I - Front II</h2>
+      </header>
+      <aside class="gridItem aside aside-area">
+        <form id="form" action="submit" class="form-area">
+          <label for="nome">Nome do personagem:</label>
+          <input type="text" name="nome" id="nome" placeholder="Nome" />
 
-        <button name="btnSubmit" type="submit" id="btnSubmit">Enviar</button>
-        <button name="btnReset" type="reset" id="btnReset">Excluir</button>
-      </form>
-    </nav>
-    <footer></footer>
+          <label for="descricao">Descrição do personagem:</label>
+          <textarea
+            name="descricao"
+            id="descricao"
+            cols="30"
+            rows="8"
+            placeholder="Descrição do seu super herói"
+          ></textarea>
+
+          <label for="url">Cadastre a url da imagem:</label>
+          <input type="text" name="url" id="url" placeholder="Endereço da imagem" />
+
+          <div class="btn-area">
+            <button type="submit">Salvar</button>
+            <button type="reset">Excluir</button>
+          </div>
+        </form>
+      </aside>
+      <main class="gridItem main">
+        <div class="gridMainContainer"></div>
+        <div id="container-cards" class="cards">
+      </main>
+      <footer class="gridItem footer gridFooterContainer">
+        <p>Juan Evangelista | Pedro Marques | Roberto Castro</p>
+        <p>2022</p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+
   </body>
 </html>
