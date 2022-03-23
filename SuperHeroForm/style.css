@@ -17,7 +17,7 @@ img {
 
 
 body, button {
-
+  
   font-weight: 500;
   background-color: #521a37;
 }
@@ -135,7 +135,7 @@ header {
   flex-direction: column;
   width: 80%;
   row-gap: 10px;
-  font-weight: bold;
+  
 }
 
 form > input {
@@ -146,19 +146,18 @@ form > input {
     transition: 0.2s;
 }
 
-form > textarea{
+form > textarea {
+    
     border-radius: 5px;
     border: none;
     margin-bottom: 15px;
     transition: 0.2s;
 }
 
-input:hover{
+input:hover, textarea:hover{
   filter: brightness(0.9)
 }
-textarea:hover{
-  filter: brightness(0.9)
-}
+
 
 .btn-area{
     display: flex;
@@ -197,6 +196,5 @@ button:hover{
   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
   padding: 30px;
   margin: 20px;
-  width: 400px;
   background-color: white;
 }
