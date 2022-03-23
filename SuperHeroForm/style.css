@@ -1,12 +1,13 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-h1,h2, strong {
+h1,
+h2,
+strong {
   font-weight: 600;
 }
 
@@ -15,9 +16,8 @@ img {
   max-height: 100%;
 }
 
-
-body, button {
-  
+body,
+button {
   font-weight: 500;
   background-color: #521a37;
 }
@@ -26,7 +26,7 @@ body, button {
   width: 90%;
   height: 100vh;
   display: grid;
- 
+
   margin: 0 auto;
   color: #fff;
 
@@ -73,14 +73,13 @@ header {
 
 .heroName {
   color: black;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-
 }
 
 .description {
   color: black;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
@@ -135,60 +134,57 @@ header {
   flex-direction: column;
   width: 80%;
   row-gap: 10px;
-  
 }
 
 form > input {
-    border-radius: 5px;
-    height: 30px;
-    border: none;
-    margin-bottom: 15px;
-    transition: 0.2s;
+  border-radius: 5px;
+  height: 30px;
+  border: none;
+  margin-bottom: 15px;
+  transition: 0.2s;
 }
 
 form > textarea {
-    
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 15px;
-    transition: 0.2s;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  transition: 0.2s;
 }
 
-input:hover, textarea:hover{
-  filter: brightness(0.9)
+input:hover,
+textarea:hover {
+  filter: brightness(0.9);
 }
 
-
-.btn-area{
-    display: flex;
-    justify-content: space-between;
+.btn-area {
+  display: flex;
+  justify-content: space-between;
 }
 
-button{
-    width: 120px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    background-color: #2C1320;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.2s;
+button {
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color: #2c1320;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
 }
 
-button:hover{
-    background-color: #521a37;
+button:hover {
+  background-color: #521a37;
 }
-
 
 .cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .card {
@@ -197,4 +193,24 @@ button:hover{
   padding: 30px;
   margin: 20px;
   background-color: white;
+}
+
+@media (max-width: 940px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    padding: 40px;
+  }
+
+  .title {
+    margin: 10px auto;
+    padding-top: 20px;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+  }
 }
